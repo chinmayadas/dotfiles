@@ -1,0 +1,2 @@
+dotfiles:
+    image: rastasheep/ubuntu-sshd
