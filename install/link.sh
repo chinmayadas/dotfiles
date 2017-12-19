@@ -47,7 +47,7 @@ VIMFILES=( "$HOME/.vim:$DOTFILES/vim/.vim"
 for file in "${VIMFILES[@]}"; do
     KEY=${file%%:*}
     VALUE=${file#*:}
-    if [ -e ${KEY} ]; then
+    if [ -e ${KEY} ] || [ -L ${KEY} ]; then
         echo "${KEY} already exists... skipping."
     else
         echo "Creating symlink for $KEY"
@@ -61,11 +61,14 @@ echo -e "\n\nLinking IDE Config + Plugins"
 echo "=============================="
 
 for config in $DOTFILES/ide/*; do
-    target=$HOME/$( basename $config )
+  if [ -d $config ]; then
+    target=$HOME/.$( basename $config )
     if [ -e $target ]; then
         echo "~${target#$HOME} already exists... Skipping."
     else
         echo "Creating symlink for $config"
         ln -s $config $target
     fi
+  fi
+
 done
