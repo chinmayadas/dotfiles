@@ -24,7 +24,7 @@ if [ "$(uname)" == "Darwin" ]; then
 
     source install/brew.sh
 
-    # source install/osx.sh
+    source install/osx.sh
 
     # create a backup of the original nginx.conf
     # if [ -f /usr/local/etc/nginx/nginx.conf ]; then
