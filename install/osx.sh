@@ -280,35 +280,35 @@ defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -stri
 ###############################################################################
 
 # Hide Spotlight tray-icon (and subsequent helper)
-#sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-echo "Disable Spotlight indexing for any volume that gets mounted and has not yet been indexed before."
-# Use 'sudo mdutil -i off "/Volumes/foo"' to stop indexing any volume.
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
-# Change indexing order and disable some file types
-defaults write com.apple.spotlight orderedItems -array \
-	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
-	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
-	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
-	'{"enabled" = 1;"name" = "PDF";}' \
-	'{"enabled" = 1;"name" = "FONTS";}' \
-	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
-	'{"enabled" = 0;"name" = "MESSAGES";}' \
-	'{"enabled" = 0;"name" = "CONTACT";}' \
-	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
-	'{"enabled" = 0;"name" = "IMAGES";}' \
-	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
-	'{"enabled" = 0;"name" = "MUSIC";}' \
-	'{"enabled" = 0;"name" = "MOVIES";}' \
-	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
-	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
-	'{"enabled" = 0;"name" = "SOURCE";}'
-
-echo "Load new settings before rebuilding the index"
-killall mds > /dev/null 2>&1
-echo "Make sure indexing is enabled for the main volume"
-sudo mdutil -i on / > /dev/null
-echo "Rebuild the index from scratch"
-sudo mdutil -E / > /dev/null
+# #sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+# echo "Disable Spotlight indexing for any volume that gets mounted and has not yet been indexed before."
+# # Use 'sudo mdutil -i off "/Volumes/foo"' to stop indexing any volume.
+# sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+# # Change indexing order and disable some file types
+# defaults write com.apple.spotlight orderedItems -array \
+# 	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
+# 	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+# 	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
+# 	'{"enabled" = 1;"name" = "PDF";}' \
+# 	'{"enabled" = 1;"name" = "FONTS";}' \
+# 	'{"enabled" = 0;"name" = "DOCUMENTS";}' \
+# 	'{"enabled" = 0;"name" = "MESSAGES";}' \
+# 	'{"enabled" = 0;"name" = "CONTACT";}' \
+# 	'{"enabled" = 0;"name" = "EVENT_TODO";}' \
+# 	'{"enabled" = 0;"name" = "IMAGES";}' \
+# 	'{"enabled" = 0;"name" = "BOOKMARKS";}' \
+# 	'{"enabled" = 0;"name" = "MUSIC";}' \
+# 	'{"enabled" = 0;"name" = "MOVIES";}' \
+# 	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
+# 	'{"enabled" = 0;"name" = "SPREADSHEETS";}' \
+# 	'{"enabled" = 0;"name" = "SOURCE";}'
+#
+# echo "Load new settings before rebuilding the index"
+# killall mds > /dev/null 2>&1
+# echo "Make sure indexing is enabled for the main volume"
+# sudo mdutil -i on / > /dev/null
+# echo "Rebuild the index from scratch"
+# sudo mdutil -E / > /dev/null
 
 
 
@@ -347,8 +347,6 @@ defaults write com.apple.terminal StringEncodings -array 4
 echo "Prevent Time Machine from prompting to use new hard drives as backup volume"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
-echo "Disable local Time Machine backups"
-hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 
 
@@ -442,30 +440,11 @@ defaults write com.apple.commerce AutoUpdate -bool true
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
-echo "Kill affected applications"
-for app in "Activity Monitor" \
-	"Address Book" \
-	"Calendar" \
-	"cfprefsd" \
-	"Contacts" \
-	"Dock" \
-	"Finder" \
-	"Google Chrome Canary" \
-	"Google Chrome" \
-	"Mail" \
-	"Messages" \
-	"Opera" \
-	"Photos" \
-	"Safari" \
-	"SizeUp" \
-	"Spectacle" \
-	"SystemUIServer" \
-	"Terminal" \
-	"Transmission" \
-	"Tweetbot" \
-	"Twitter" \
-	"iCal"; do
-	killall "${app}" &> /dev/null
-done
+# echo "Kill affected applications"
+# for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
+# 	"Dock" "Finder" "Mail" "Messages" "Safari" "SizeUp" "SystemUIServer" \
+# 	"Terminal" "Transmission" "Twitter" "iCal"; do
+# 	killall "${app}" > /dev/null 2>&1
+# done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
