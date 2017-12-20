@@ -1,5 +1,10 @@
-Inspired by: https://github.com/nicknisi/dotfiles
+Inspired by:
 
+https://github.com/nicknisi/dotfiles
+
+https://github.com/addyosmani/dotfiles
+
+https://github.com/mathiasbynens/dotfiles
 
 ## Contents
 

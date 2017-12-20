@@ -60,6 +60,7 @@ done
 brew cleanup
 
 
+
 echo "Add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 PATH=$PATH:$(brew --prefix coreutils)/libexec/gnubin
 export PATH

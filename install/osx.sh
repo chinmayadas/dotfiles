@@ -7,7 +7,7 @@
 sudo -v
 
 
-echo "\n\nSetting OS X settings"
+echo -e "\n\nSetting OS X settings"
 echo "=============================="
 
 
