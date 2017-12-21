@@ -51,7 +51,7 @@ fi
 
 # Test if the variable exist
 # https://stackoverflow.com/questions/3601515/how-to-check-if-a-variable-is-set-in-bash
-[ -z "$TMUX" ] && export TERM=xterm-256color-italic
+[ -z "$TMUX" ] && export TERM=xterm-256color
 
 # install rbenv
 if command_exists rbenv; then

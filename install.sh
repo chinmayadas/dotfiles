@@ -24,7 +24,7 @@ if [ "$(uname)" == "Darwin" ]; then
 
     # source install/brew.sh
     # source install/cask.sh
-    source install/osx.sh
+    # source install/osx.sh
 
 fi
 #
@@ -38,7 +38,9 @@ if ! command_exists zsh; then
 
 elif ! [[ $SHELL =~ .*zsh.* ]]; then
     echo "Configuring zsh as default shell"
-    sudo sh -c "echo $(which zsh) >> /etc/shells"
+
+
+    # sudo sh -c "echo $(which zsh) >> /etc/shells"
 
     # for unknown reason, when try to change shell, the script stucked
     # chsh -s $(which zsh)
@@ -46,8 +48,12 @@ fi
 
 
 if ! command_exists zplug; then
+  if [ ! -d ~/.zplug ]; then
     echo "installing zplug, a plugin manager for zsh - http://zplug.sh"
     git clone https://github.com/zplug/zplug ~/.zplug
+  else
+    echo "zplug manager already installed. skipping."
+  fi
 fi
 
 echo "Done. Reload your terminal."
