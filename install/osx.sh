@@ -48,8 +48,11 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 echo "Disable press-and-hold for keys in favor of key repeat"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-echo "Set a blazingly fast keyboard repeat rate"
-defaults write NSGlobalDomain KeyRepeat -int 0
+echo "Set a blazingly fast keyboard repeat rate, "
+defaults write NSGlobalDomain KeyRepeat -int 0.02 
+
+echo "Set a shorter Delay until key repeat"
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 echo "Set the timezone; see 'systemsetup -listtimezones' for other values"
 systemsetup -settimezone "America/New_York" > /dev/null
