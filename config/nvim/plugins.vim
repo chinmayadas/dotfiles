@@ -4,6 +4,7 @@ if !filereadable(plugpath)
     if executable('curl')
         let plugurl = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
         call system('curl -fLo ' . shellescape(plugpath) . ' --create-dirs ' . plugurl)
+        autocmd VimEnter * PlugUpdate --sync | source $MYVIMRC
         if v:shell_error
             echom "Error downloading vim-plug. Please install it manually.\n"
             exit
@@ -13,6 +14,7 @@ if !filereadable(plugpath)
         exit
     endif
 endif
+
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -64,18 +66,18 @@ Plug 'mxw/vim-jsx', { 'for': ['javascript.jsx', 'javascript'] } " JSX support
 Plug 'ternjs/tern_for_vim', { 'for': ['javascript', 'javascript.jsx'], 'do': 'npm install' }
 
 " TypeScript
-Plug 'leafgarland/typescript-vim', { 'for': 'typescript' } " typescript support
-Plug 'angelozerr/tslint-language-service', { 'for': 'typescript' }
-Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'npm install' }
+" Plug 'leafgarland/typescript-vim', { 'for': 'typescript' } " typescript support
+" Plug 'angelozerr/tslint-language-service', { 'for': 'typescript' }
+" Plug 'Quramy/tsuquyomi', { 'for': 'typescript', 'do': 'npm install' }
 
 " Elm
-Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
+" Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
 
 " Ruby
-Plug 'tpope/vim-endwise', { 'for': 'ruby' } " automatically add end in ruby
+" Plug 'tpope/vim-endwise', { 'for': 'ruby' } " automatically add end in ruby
 
 " CoffeeScript
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
+" Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
 
 " styles
 Plug 'wavded/vim-stylus', { 'for': ['stylus', 'markdown'] } " markdown support
@@ -95,4 +97,3 @@ Plug 'fatih/vim-go', { 'for': 'go' } " go support
 Plug 'timcharper/textile.vim', { 'for': 'textile' } " textile support
 
 call plug#end()
-

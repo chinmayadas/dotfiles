@@ -22,17 +22,27 @@ First, you may want to backup any existing files that exist so this doesn't over
 
 Run `install/backup.sh` to backup all symlinked files to a `~/dotfiles-backup` directory.
 
-This will not delete any of these files, and the install scripts will not overwrite any existing. After the backup is complete, you can delete the files from your home directory to continue installation.
+This will not delete any of these files, and the install scripts will not overwrite any
+existing. After the backup is complete, you can delete the files from your home directory
+to continue installation.
 
 ### Installation
 
-If on OSX, you will need to install the XCode CLI tools before continuing. To do so, open a terminal and type
+If on OSX, you will need to install the XCode CLI tools before continuing. To do
+so, open a terminal and type
 
 ```bash
 ➜ xcode-select --install
 ```
 
+### Fonts
+To render prettier theme for vim, tmux, and terminal,
+[Powerline](https://github.com/powerline/fonts) font will be installed to provide
+"Powerline" glyphs.
 
+### Vim
+
+[Vim plug](https://github.com/junegunn/vim-plug) is used to manage vim plugins.
 
 Switching to neovim (nvim)
 https://medium.com/usevim/what-is-modern-vim-2591f6b1ec04
