@@ -70,3 +70,20 @@ https://medium.com/usevim/what-is-modern-vim-2591f6b1ec04
 -w filename - Check if file is writable
 -x filename - Check if file is executable
 ```
+
+
+
+
+### Tmux
+``` 
+# Switching session
+tmux switch -t [session_name]
+
+
+# Cycle through default pane layout
+# https://superuser.com/questions/493048/how-to-convert-2-horizontal-panes-to-vertical-panes-in-tmux
+# C-b space (bound to next-layout by default) cycles through available layouts, you can also use the select-layout command.
+# M-1 to M-5  Arrange panes in one of the five preset layouts: even- horizontal, even-vertical, main-horizontal, main- vertical, or tiled.
+
+```
+
