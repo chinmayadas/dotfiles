@@ -1,4 +1,9 @@
-set -g default-command "login-shell"
+set -g default-command "fish"
+
+
+# any split or new window inside that session opens in your current folde
+set -g default-folder $(pwd)
+
 
 # tmux display things in 256 colors
 set -g default-terminal "tmux-256color"
