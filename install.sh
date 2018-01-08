@@ -17,6 +17,9 @@ source install/link.sh
 
 source install/git.sh
 
+source install/fish.sh
+
+
 
 # only perform macOS-specific install
 if [ "$(uname)" == "Darwin" ]; then

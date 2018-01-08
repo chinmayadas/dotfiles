@@ -85,5 +85,11 @@ tmux switch -t [session_name]
 # C-b space (bound to next-layout by default) cycles through available layouts, you can also use the select-layout command.
 # M-1 to M-5  Arrange panes in one of the five preset layouts: even- horizontal, even-vertical, main-horizontal, main- vertical, or tiled.
 
+
+# Create new pane
+C-b % # Horital pane
+C-b " #Horitall pane
+
+
 ```
 
