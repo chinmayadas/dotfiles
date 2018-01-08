@@ -67,8 +67,8 @@ highlight NonText ctermfg=236
 
 " make comments and HTML attributes italic
 highlight Comment cterm=italic
-highlight Comment ctermbg=blue
-highlight Comment ctermfg=black
+highlight Comment ctermbg=black
+highlight Comment ctermfg=blue
 highlight htmlArg cterm=italic
 highlight xmlAttrib cterm=italic
 highlight Type cterm=italic
