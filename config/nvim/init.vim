@@ -20,6 +20,10 @@ set textwidth=120
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
+set
+
+
+
 let g:python_host_prog = '/usr/local/bin/python2'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
@@ -60,6 +64,12 @@ else
 
 	colorscheme onedark
 endif
+
+
+
+" set font
+set guifont=Source\ Code\ Pro\ for\ Powerline:h18
+
 
 " make the highlighting of tabs and other non-text less annoying
 highlight SpecialKey ctermfg=236
@@ -121,7 +131,7 @@ set hidden                  " current buffer can be put into background
 set showcmd                 " show incomplete commands
 set noshowmode              " don't show which mode disabled for PowerLine
 set wildmode=list:longest   " complete files like a shell
-set scrolloff=3             " lines of text around cursor
+set scrolloff=10             " lines of text around cursor
 set shell=$SHELL
 set cmdheight=1             " command bar height
 set title                   " set terminal title
@@ -396,3 +406,14 @@ let g:airline#extensions#tabline#show_splits = 0
 " don't hide quotes in json files
 let g:vim_json_syntax_conceal = 0
 " }}}
+"
+"
+
+" Quickly edit/reload this configuration file
+nnoremap gev :e $MYVIMRC<CR>
+nnoremap gsv :so $MYVIMRC<CR>
+
+
+" Test custom command, execute by ':Test'
+" command Test execute "!echo 'hello world'"
+
