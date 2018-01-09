@@ -21,37 +21,38 @@ echo "=============================="
 
 formulas=(
     # flags should pass through the the `brew list check`
+    # nginx
+    'gnu-sed --with-default-names'  # Install GNU `sed`, overwriting the built-in `sed`.
+    'grep --with-default-names'
     'macvim --with-override-system-vim'
+    'wget --enable-iri' #Install wget with IRI support
     ack
+    coreutils # Install GNU core utilities (those that come with OS X are outdated)
     diff-so-fancy #make your diff's human readable instead of machine readable.
     dnsmasq # local dns
+    entr  # Run arbitrary commands when files change
+    findutils # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+    fish  # fish shell
     fzf
     git
-    'grep --with-default-names'
+    git-standup # See user commits log by day range
     highlight
     hub # better git
+    lynx  # textbase browser
     markdown
+    mysql
     neovim/neovim/neovim  # better vim
     node
-    # nginx
+    pv
     reattach-to-user-namespace  #  pbpaste and pbcopy under tmux
+    rename  # Perl-powered file rename script with many helpful built-ins
+    ripgrep # better search for developer
+    sqlmap  # Penetration testing for SQL injection and database servers
     the_silver_searcher # better search than grep, ack
     tmux
     tree  # list file in tree format
-    'wget --enable-iri' #Install wget with IRI support
     z
     zsh
-    fish  # fish shell
-    ripgrep # better search for developer
-    git-standup # See user commits log by day range
-    entr  # Run arbitrary commands when files change
-    coreutils # Install GNU core utilities (those that come with OS X are outdated)
-    findutils # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-    lynx  # textbase browser
-    rename  # Perl-powered file rename script with many helpful built-ins
-    sqlmap  # Penetration testing for SQL injection and database servers
-    'gnu-sed --with-default-names'  # Install GNU `sed`, overwriting the built-in `sed`.
-
 )
 
 for formula in "${formulas[@]}"; do
