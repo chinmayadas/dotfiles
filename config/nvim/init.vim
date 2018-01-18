@@ -20,12 +20,9 @@ set textwidth=120
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
-set
 
-
-
-let g:python_host_prog = '/usr/local/bin/python2'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python_host_prog = '/usr/local/bin/python'
+" let g:python3_host_prog = '/usr/local/bin/python3'
 
 if (has('nvim'))
 	" show results of substition as they're happening
@@ -410,10 +407,7 @@ let g:vim_json_syntax_conceal = 0
 "
 
 " Quickly edit/reload this configuration file
-nnoremap gev :e $MYVIMRC<CR>
-nnoremap gsv :so $MYVIMRC<CR>
+" nnoremap gev :e $MYVIMRC<CR>
+" nnoremap gsv :so $MYVIMRC<CR>
 
-
-" Test custom command, execute by ':Test'
-" command Test execute "!echo 'hello world'"
 
