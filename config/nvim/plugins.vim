@@ -52,6 +52,10 @@ Plug 'sickill/vim-pasta' " context-aware pasting
 Plug 'SirVer/ultisnips' " Snippets plugin
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
+Plug 'easymotion/vim-easymotion' " Vim motions on speed! https://code.tutsplus.com/tutorials/vim-essential-plugin-easymotion--net-19223
+
+
+
 " html / templates
 Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript.jsx'] } " emmet support for vim - easily create markdup wth CSS-like syntax
 Plug 'gregsexton/MatchTag', { 'for': 'html' } " match tags in html, similar to paren support

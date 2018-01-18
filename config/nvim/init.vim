@@ -146,6 +146,17 @@ set magic                   " Set magic on, for regex
 set showmatch               " show matching braces
 set mat=2                   " how many tenths of a second to blink
 
+
+" buffer
+set autowrite               "Save on buffer switch
+
+" Quickly go forward or backward to buffer
+nmap :bp :BufSurfBack<cr>
+nmap :bn :BufSurfForward<cr>
+
+
+
+
 " error bells
 set noerrorbells
 set visualbell
@@ -410,5 +421,11 @@ let g:vim_json_syntax_conceal = 0
 " Quickly edit/reload this configuration file
 " nnoremap gev :e $MYVIMRC<CR>
 " nnoremap gsv :so $MYVIMRC<CR>
+
+"Auto change directory to match current file ,cd
+nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+
+"Load the current buffer in Chrome
+nmap ,c :!open -a Google\ Chrome<cr>
 
 
