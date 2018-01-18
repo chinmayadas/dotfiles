@@ -83,8 +83,9 @@ highlight Normal ctermbg=none
 
 set number                  " show line numbers
 
-set wrap                    " turn on line wrapping
-set wrapmargin=8            " wrap lines when coming within n characters from side
+" set wrap                    " turn on line wrapping
+" set wrapmargin=8            " wrap lines when coming within n characters from side
+set nowrap                  " don't wrap lines
 set linebreak               " set soft wrapping
 set showbreak=…             " show ellipsis at breaking
 
