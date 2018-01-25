@@ -425,7 +425,18 @@ let g:vim_json_syntax_conceal = 0
 "Auto change directory to match current file ,cd
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 
-"Load the current buffer in Chrome
-nmap ,c :!open -a Google\ Chrome<cr>
+
+" Enable vim autocomplete
+" https://docs.oseems.com/general/application/vim/enable-auto-complete
+function! InsertTabWrapper()
+      let col = col('.') - 1
+      if !col || getline('.')[col - 1] !~ '\k'
+          return "\<tab>"
+      else
+          return "\<c-p>"
+      endif
+endfunction
+
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
 
