@@ -448,3 +448,8 @@ map <Leader>vm :VimuxPromptCommand("make ")<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
 map <Leader>vq :VimuxCloseRunner<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
+
+" Commentary
+autocmd FileType twig set commentstring={# %s
+
+
