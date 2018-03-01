@@ -72,12 +72,29 @@ https://medium.com/usevim/what-is-modern-vim-2591f6b1ec04
 ```
 
 
+### Vim Tips
+To check health status of vim installation. Useful with there's a problem with vim
+```
+:CheckHealth
+```
+
+To see if a plugin or script set the option.
+For example, check `:verbose set paste?`
 
 
 ### Tmux
 ``` 
 # Switching session
 tmux switch -t [session_name]
+
+# Create new session within tmux
+C-b then :new [name]
+
+# Start copy and paste
+C-b + Esc
+Press v
+Use h,j,k,l to highligh
+Press p
 
 
 # Cycle through default pane layout
