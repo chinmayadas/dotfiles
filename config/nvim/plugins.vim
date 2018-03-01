@@ -100,4 +100,8 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' } " interactive command execution in v
 Plug 'fatih/vim-go', { 'for': 'go' } " go support
 Plug 'timcharper/textile.vim', { 'for': 'textile' } " textile support
 
+" twig template
+Plug 'nelsyeung/twig.vim'
+
+
 call plug#end()
