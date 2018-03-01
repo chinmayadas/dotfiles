@@ -33,7 +33,7 @@ Plug 'tpope/vim-commentary' " comment stuff out
 Plug 'tpope/vim-unimpaired' " mappings which are simply short normal mode aliases for commonly used ex commands
 Plug 'tpope/vim-ragtag' " endings for html, xml, etc. - ehances surround
 Plug 'tpope/vim-surround' " mappings to easily delete, change and add such surroundings in pairs, such as quotes, parens, etc.
-Plug 'benmills/vimux' " tmux integration for vim
+Plug 'benmills/vimux' " tmux integration for vim https://www.braintreepayments.com/blog/vimux-simple-vim-and-tmux-integration/
 Plug 'vim-airline/vim-airline' " fancy statusline
 Plug 'vim-airline/vim-airline-themes' " themes for vim-airline
 Plug 'w0rp/ale' " Asynchonous linting engine
@@ -53,7 +53,6 @@ Plug 'SirVer/ultisnips' " Snippets plugin
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 Plug 'easymotion/vim-easymotion' " Vim motions on speed! https://code.tutsplus.com/tutorials/vim-essential-plugin-easymotion--net-19223
-
 
 
 " html / templates
