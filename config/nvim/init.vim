@@ -513,4 +513,5 @@ map <F12> :ResizeFontBigger<CR>
 " and https://github.com/Shougo/deoplete.nvim
 let g:deoplete#enable_at_startup = 1
 
-
+" Most Recent Used (MRU)
+map <leader>mru :MRU<cr>
