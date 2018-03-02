@@ -22,7 +22,7 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 
 let g:python_host_prog = '/usr/bin/python'
-" let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python3_host_prog = '/Users/Ray/.pyenv/versions/neovim3/bin/python'
 
 if (has('nvim'))
 	" show results of substition as they're happening
@@ -454,7 +454,7 @@ map <Leader>vl :VimuxRunLastCommand<CR>
 " Commentary
 autocmd FileType twig setlocal commentstring=#\ %s
 
-" set filetype
+" set filetypehttps://github.com/Shougo/deoplete.nvim
 autocmd BufRead,BufNewFile *.theme set filetype=php
 autocmd BufRead,BufNewFile *.twig set filetype=twig
 autocmd BufRead,BufNewFile *.js set filetype=javascript
@@ -504,5 +504,13 @@ endfunction
 " https://vimawesome.com/plugin/resize-font
 map <F11> :ResizeFontSmaller<CR>
 map <F12> :ResizeFontBigger<CR>
+
+
+" Use deoplete.
+" It works with python3, and it is better to use pyenv to manage env. Used brew and pip to
+" install neovim for python seems problematic. 
+" See https://github.com/zchee/deoplete-jedi/wiki/Setting-up-Python-for-Neovim
+" and https://github.com/Shougo/deoplete.nvim
+let g:deoplete#enable_at_startup = 1
 
 

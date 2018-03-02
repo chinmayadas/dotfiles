@@ -44,7 +44,7 @@ formulas=(
     mysql
     neovim/neovim/neovim  # better vim
     node
-    python
+    python3
     pv
     reattach-to-user-namespace  #  pbpaste and pbcopy under tmux
     rename  # Perl-powered file rename script with many helpful built-ins

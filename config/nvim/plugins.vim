@@ -55,11 +55,16 @@ Plug 'vim-syntastic/syntastic' " A syntax checking plugin
 Plug 'easymotion/vim-easymotion' " Vim motions on speed! https://code.tutsplus.com/tutorials/vim-essential-plugin-easymotion--net-19223
 Plug 'wahidrahim/resize-font'  " Resize font https://vimawesome.com/plugin/resize-font
 
+
+" IDE stuffs
+Plug 'ervandew/supertab' " supertab makes tab work with autocomplete and ultisnips
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Provides Async autocomplete with Tern
+
 " Note for install YouComplete
 " Due to file size, it is recommended to download the plugin and compile it locally
 " git clone git@github.com:Valloric/YouCompleteMe.git
 " then run python ./install.py --clang-completer --tern-completer
-" I would prefer if there's an alternative for this
+" I would prefer if there's an alternative for this (deoplete.nvim)
 "
 " Plug '~/.dotfiles/config/nvim/plugged/YouCompleteMe', { 'do': 'python ./install.py --clang-completer --tern-completer' }
 
