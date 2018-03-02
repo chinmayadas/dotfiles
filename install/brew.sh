@@ -28,6 +28,7 @@ formulas=(
     'wget --enable-iri' #Install wget with IRI support
     ack
     coreutils # Install GNU core utilities (those that come with OS X are outdated)
+    CMake
     diff-so-fancy #make your diff's human readable instead of machine readable.
     dnsmasq # local dns
     entr  # Run arbitrary commands when files change
@@ -43,6 +44,7 @@ formulas=(
     mysql
     neovim/neovim/neovim  # better vim
     node
+    python
     pv
     reattach-to-user-namespace  #  pbpaste and pbcopy under tmux
     rename  # Perl-powered file rename script with many helpful built-ins

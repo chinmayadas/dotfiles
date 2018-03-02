@@ -33,7 +33,7 @@ Plug 'tpope/vim-commentary' " comment stuff out
 Plug 'tpope/vim-unimpaired' " mappings which are simply short normal mode aliases for commonly used ex commands
 Plug 'tpope/vim-ragtag' " endings for html, xml, etc. - ehances surround
 Plug 'tpope/vim-surround' " mappings to easily delete, change and add such surroundings in pairs, such as quotes, parens, etc.
-Plug 'benmills/vimux' " tmux integration for vim
+Plug 'benmills/vimux' " tmux integration for vim https://www.braintreepayments.com/blog/vimux-simple-vim-and-tmux-integration/
 Plug 'vim-airline/vim-airline' " fancy statusline
 Plug 'vim-airline/vim-airline-themes' " themes for vim-airline
 Plug 'w0rp/ale' " Asynchonous linting engine
@@ -48,14 +48,20 @@ Plug 'AndrewRadev/splitjoin.vim' " single/multi line code handler: gS - split on
 Plug 'vim-scripts/matchit.zip' " extended % matching
 Plug 'tpope/vim-sleuth' " detect indent style (tabs vs. spaces)
 Plug 'sickill/vim-pasta' " context-aware pasting
-" Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --clang-completer --tern-completer' }
 Plug 'SirVer/ultisnips' " Snippets plugin
+Plug 'honza/vim-snippets' " Snippets files for various programming languages, doesn't seem to work
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-
+Plug 'vim-syntastic/syntastic' " A syntax checking plugin
 Plug 'easymotion/vim-easymotion' " Vim motions on speed! https://code.tutsplus.com/tutorials/vim-essential-plugin-easymotion--net-19223
 Plug 'wahidrahim/resize-font'  " Resize font https://vimawesome.com/plugin/resize-font
 
-
+" Note for install YouComplete
+" Due to file size, it is recommended to download the plugin and compile it locally
+" git clone git@github.com:Valloric/YouCompleteMe.git
+" then run python ./install.py --clang-completer --tern-completer
+" I would prefer if there's an alternative for this
+"
+" Plug '~/.dotfiles/config/nvim/plugged/YouCompleteMe', { 'do': 'python ./install.py --clang-completer --tern-completer' }
 
 " html / templates
 Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript.jsx'] } " emmet support for vim - easily create markdup wth CSS-like syntax
@@ -100,5 +106,9 @@ Plug 'elzr/vim-json', { 'for': 'json' } " JSON support
 Plug 'Shougo/vimproc.vim', { 'do': 'make' } " interactive command execution in vim
 Plug 'fatih/vim-go', { 'for': 'go' } " go support
 Plug 'timcharper/textile.vim', { 'for': 'textile' } " textile support
+
+" twig template
+Plug 'nelsyeung/twig.vim'
+
 
 call plug#end()

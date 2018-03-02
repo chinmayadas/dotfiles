@@ -21,7 +21,7 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 
-let g:python_host_prog = '/usr/local/bin/python'
+let g:python_host_prog = '/usr/bin/python'
 " let g:python3_host_prog = '/usr/local/bin/python3'
 
 if (has('nvim'))
@@ -185,6 +185,9 @@ nmap <leader>, :w<cr>
 
 " set paste toggle
 set pastetoggle=<leader>v
+
+" disable set paste by default 
+set nopaste
 
 " edit ~/.config/nvim/init.vim
 map <leader>ev :e! ~/.config/nvim/init.vim<cr>
@@ -439,6 +442,36 @@ endfunction
 
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
+" Vimux integration
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vm :VimuxPromptCommand("make ")<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vq :VimuxCloseRunner<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+
+
+
+" Commentary
+autocmd FileType twig setlocal commentstring=#\ %s
+
+" set filetype
+autocmd BufRead,BufNewFile *.theme set filetype=php
+autocmd BufRead,BufNewFile *.twig set filetype=twig
+autocmd BufRead,BufNewFile *.js set filetype=javascript
+
+" vim-syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:ale_emit_conflict_warnings = 0
+let g:syntastic_enable_signs = 1
+" let g:syntastic_javascript_checkers = ['jslint']
+let g:syntastic_javascript_checkers = ["jslint"]
 
 
 
