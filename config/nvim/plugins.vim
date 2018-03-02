@@ -53,6 +53,7 @@ Plug 'SirVer/ultisnips' " Snippets plugin
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 
 Plug 'easymotion/vim-easymotion' " Vim motions on speed! https://code.tutsplus.com/tutorials/vim-essential-plugin-easymotion--net-19223
+Plug 'wahidrahim/resize-font'  " Resize font https://vimawesome.com/plugin/resize-font
 
 
 

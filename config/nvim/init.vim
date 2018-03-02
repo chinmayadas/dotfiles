@@ -467,4 +467,9 @@ function! LineBreakAt(bang, ...) range
 endfunction
 
 
+" Font resize mapping
+" https://vimawesome.com/plugin/resize-font
+map <F11> :ResizeFontSmaller<CR>
+map <F12> :ResizeFontBigger<CR>
+
 
