@@ -28,6 +28,7 @@ Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
 Plug 'mileszs/ack.vim' " search inside files using ack. Same as command line ack utility, but use :Ack
 " Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
+Plug 'vim-scripts/mru.vim' "provides an easy access to a list of recently opened/edited files in Vim
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary' " comment stuff out
 Plug 'tpope/vim-unimpaired' " mappings which are simply short normal mode aliases for commonly used ex commands
