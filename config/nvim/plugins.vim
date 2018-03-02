@@ -51,7 +51,7 @@ Plug 'sickill/vim-pasta' " context-aware pasting
 Plug 'SirVer/ultisnips' " Snippets plugin
 Plug 'honza/vim-snippets' " Snippets files for various programming languages, doesn't seem to work
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
-
+Plug 'vim-syntastic/syntastic' " A syntax checking plugin
 Plug 'easymotion/vim-easymotion' " Vim motions on speed! https://code.tutsplus.com/tutorials/vim-essential-plugin-easymotion--net-19223
 
 " Note for install YouComplete
