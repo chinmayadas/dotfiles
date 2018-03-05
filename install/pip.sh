@@ -2,12 +2,17 @@
 
 #Reference: https://github.com/zchee/deoplete-jedi/wiki/Setting-up-Python-for-Neovim
 
+# Installing pyenv with homebrew is unreliable. Use pyenv-installer instead.
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
 echo 'set -x PATH "$HOME/.pyenv/bin" $PATH' >> ~/.config/fish/conf.d/init.fish
 
 pyenv install 3.4.4
 pyenv virtualenv 3.4.4 neovim3
+
+# https://github.com/pyenv/pyenv-virtualenv/issues/155
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 pyenv activate neovim3
 

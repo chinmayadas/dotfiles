@@ -20,9 +20,9 @@ set textwidth=120
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
-
+" Please dobule check the path is correct for your python installation
 let g:python_host_prog = '/usr/bin/python'
-let g:python3_host_prog = '/Users/Ray/.pyenv/versions/neovim3/bin/python'
+let g:python3_host_prog = '/Users/huangr/.pyenv/versions/neovim3/bin/python'
 
 if (has('nvim'))
 	" show results of substition as they're happening

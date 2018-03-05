@@ -45,6 +45,7 @@ formulas=(
     neovim/neovim/neovim  # better vim
     node
     python3
+    pyenv
     pv
     reattach-to-user-namespace  #  pbpaste and pbcopy under tmux
     rename  # Perl-powered file rename script with many helpful built-ins
