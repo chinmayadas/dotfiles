@@ -82,6 +82,15 @@ To see if a plugin or script set the option.
 For example, check `:verbose set paste?`
 
 
+To increase/decrease window size:
+http://vim.wikia.com/wiki/Resize_splits_more_quickly
+```
+ctrl-w + and ctrl-w - 
+```
+
+
+
+
 ### Tmux
 ``` 
 # Switching session
