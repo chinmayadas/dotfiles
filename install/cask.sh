@@ -14,6 +14,7 @@ apps=(
   'atom',
   'google-chrome'
   'iterm2'
+  'itsycal'
 )
 
 for app in "${apps[@]}"; do
