@@ -88,6 +88,14 @@ http://vim.wikia.com/wiki/Resize_splits_more_quickly
 ctrl-w + and ctrl-w - 
 ```
 
+To check which plugin effect a key stroke, for example, the <tab> key
+```
+verbose imap <Tab>
+
+# Disable the tab mapping
+:iunmap <Tab>
+
+```
 
 
 

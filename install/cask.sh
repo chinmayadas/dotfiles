@@ -15,6 +15,7 @@ apps=(
   'google-chrome'
   'iterm2'
   'itsycal'
+  'google-chrome-canary'
 )
 
 for app in "${apps[@]}"; do
