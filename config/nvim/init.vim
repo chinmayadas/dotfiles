@@ -402,7 +402,7 @@ let g:ycm_enable_diagnostic_highlighting = 0
 
 " UltiSnips
 """""""""""""""""""""""""""""""""""""
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<F1>"
 
 " airline options
 """""""""""""""""""""""""""""""""""""
