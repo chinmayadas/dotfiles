@@ -109,6 +109,10 @@
 	graph = git log --graph --all --decorate --stat --date=iso
 	local = log --oneline --no-merges origin/master..HEAD
 	upstream = log --oneline --no-merges HEAD..origin/master
+    
+    # Reset file permission
+    perm-reset = "!git diff -p -R --no-color | grep -E '^(diff|(old|new) mode)' --color=never | git apply"
+
 [color]
     diff = auto
     status = auto
