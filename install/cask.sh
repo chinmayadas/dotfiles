@@ -10,12 +10,14 @@ brew tap caskroom/cask
 apps=(
   'vlc'
   'sequel-pro'
+  'mysqlworkbench'
   'sublime-text'
   'atom',
   'google-chrome'
   'iterm2'
   'itsycal'
   'google-chrome-canary'
+  'adium'
 )
 
 for app in "${apps[@]}"; do
