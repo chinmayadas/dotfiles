@@ -139,5 +139,15 @@ C-b
 :resize-pane -R 10 (Resizes the current pane right by 10 cells)
 
 
+# Switch between windows
+
+C-a 1 ...      switch to window 1, ..., 9, 0
+C-a 9
+C-a 0
+C-a p          previous window
+C-a n          next window
+C-a l          ‘last’ (previously used) window
+C-a w          choose window from a list
+
 ```
 
