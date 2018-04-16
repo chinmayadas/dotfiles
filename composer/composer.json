@@ -1,0 +1,6 @@
+{
+    "require": {
+        "drupal/coder": "^8.2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4"
+    }
+}
