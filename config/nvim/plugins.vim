@@ -61,6 +61,7 @@ Plug 'wahidrahim/resize-font'  " Resize font https://vimawesome.com/plugin/resiz
 " IDE stuffs
 Plug 'ervandew/supertab' " supertab makes tab work with autocomplete and ultisnips
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Provides Async autocomplete with Tern
+Plug 'majutsushi/tagbar' "  provides an easy way to browse the tags of the current file and get an overview of its structure
 
 " Note for install YouComplete
 " Due to file size, it is recommended to download the plugin and compile it locally
