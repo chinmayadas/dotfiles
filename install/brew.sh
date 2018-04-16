@@ -29,6 +29,7 @@ formulas=(
     ack
     coreutils # Install GNU core utilities (those that come with OS X are outdated)
     CMake
+    ctags # generates an index (or tag) file of language objects found in source files that allows these items to be quickly and easily located by a text editor or other utility.
     diff-so-fancy #make your diff's human readable instead of machine readable.
     dnsmasq # local dns
     entr  # Run arbitrary commands when files change
