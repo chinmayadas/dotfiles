@@ -44,6 +44,9 @@ To render prettier theme for vim, tmux, and terminal,
 
 [Vim plug](https://github.com/junegunn/vim-plug) is used to manage vim plugins.
 
+[Setting up python for neovim](https://github.com/zchee/deoplete-jedi/wiki/Setting-up-Python-for-Neovim)
+
+
 Switching to neovim (nvim)
 https://medium.com/usevim/what-is-modern-vim-2591f6b1ec04
 * Asynchronous IO, give performance gain on plugins load

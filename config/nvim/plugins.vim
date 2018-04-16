@@ -117,5 +117,8 @@ Plug 'timcharper/textile.vim', { 'for': 'textile' } " textile support
 " twig template
 Plug 'nelsyeung/twig.vim'
 
+" drupaV
+Plug 'https://git.drupal.org/project/vimrc.git', { 'branch': '8.x-1.x', 'rtp': 'bundle/vim-plugin-for-drupal' }
+
 
 call plug#end()
