@@ -473,6 +473,10 @@ let g:syntastic_enable_signs = 1
 " let g:syntastic_javascript_checkers = ['jslint']
 let g:syntastic_javascript_checkers = ["jslint"]
 
+" https://michaelthessel.com/syntastic-syntax-checker-for-vim/
+let g:syntastic_php_checkers = ["phpcs"]
+let g:syntastic_php_phpcs_args = "--standard=Drupal --extensions='php,module,inc,install,test,profile,theme,css,info,txt,md"
+
 
 
 " A function for adding new linebreak
