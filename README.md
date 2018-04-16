@@ -46,6 +46,9 @@ To render prettier theme for vim, tmux, and terminal,
 
 [Setting up python for neovim](https://github.com/zchee/deoplete-jedi/wiki/Setting-up-Python-for-Neovim)
 
+[Vim for Drupal Development] (https://www.drupal.org/node/1407412)
+
+
 
 Switching to neovim (nvim)
 https://medium.com/usevim/what-is-modern-vim-2591f6b1ec04
