@@ -1,3 +1,5 @@
 config/nvim/plugged/*
 config/nvim/.netrwhist
 */node_modules/*
+composer/cache/*
+composer/vendor/*
