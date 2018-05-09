@@ -1,6 +1,6 @@
 # gitconfig
 [user]
-	name = leoman730
+	name = Ray Huang
 	email = leoman730@gmail.com
 [github]
 	user = leoman730
@@ -162,7 +162,7 @@
     extendRegexp = true
     lineNumber = true
 [credential]
-	helper = osxkeychain
+	helper = cache --timeout 3600
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
