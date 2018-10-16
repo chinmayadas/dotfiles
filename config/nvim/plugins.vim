@@ -27,6 +27,7 @@ Plug 'tpope/vim-abolish'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
 Plug 'mileszs/ack.vim' " search inside files using ack. Same as command line ack utility, but use :Ack
+Plug 'junegunn/goyo.vim' " Distraction-free writing in Vim
 " Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'vim-scripts/mru.vim' "provides an easy access to a list of recently opened/edited files in Vim
 Plug 'jiangmiao/auto-pairs'
@@ -56,12 +57,15 @@ Plug 'Shougo/vimproc.vim', {'do' : 'make'}
 Plug 'vim-syntastic/syntastic' " A syntax checking plugin
 Plug 'easymotion/vim-easymotion' " Vim motions on speed! https://code.tutsplus.com/tutorials/vim-essential-plugin-easymotion--net-19223
 Plug 'wahidrahim/resize-font'  " Resize font https://vimawesome.com/plugin/resize-font
-
+Plug 'neomake/neomake' " Provide asynchronous to run programs
 
 " IDE stuffs
 Plug 'ervandew/supertab' " supertab makes tab work with autocomplete and ultisnips
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Provides Async autocomplete with Tern
 Plug 'majutsushi/tagbar' "  provides an easy way to browse the tags of the current file and get an overview of its structure
+Plug 'vim-vdebug/vdebug' "Debugger client for Vim
+
+
 
 " Note for install YouComplete
 " Due to file size, it is recommended to download the plugin and compile it locally
@@ -118,7 +122,7 @@ Plug 'timcharper/textile.vim', { 'for': 'textile' } " textile support
 " twig template
 Plug 'nelsyeung/twig.vim'
 
-" drupaV
+" drupal
 Plug 'https://git.drupal.org/project/vimrc.git', { 'branch': '8.x-1.x', 'rtp': 'bundle/vim-plugin-for-drupal' }
 
 

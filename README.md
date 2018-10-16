@@ -47,7 +47,7 @@ To render prettier theme for vim, tmux, and terminal,
 [Setting up python for neovim](https://github.com/zchee/deoplete-jedi/wiki/Setting-up-Python-for-Neovim)
 
 [Vim for Drupal Development] (https://www.drupal.org/node/1407412)
-
+[Installing Drupal Code Sniffer on Vim, Sublime Text, Visual Studio Code, Komodo, TextMate, Atom & Emacs](https://www.drupal.org/node/1419996)
 
 
 Switching to neovim (nvim)
@@ -102,6 +102,14 @@ verbose imap <Tab>
 :iunmap <Tab>
 
 ```
+
+To debuging a vim session by generate a vimlog file
+https://stackoverflow.com/questions/3025615/is-there-a-vim-runtime-log
+```
+# running vim with the -V[N] option will do a pretty hefty runtime log, here N is the debug level.
+vim -V9myVim.log [file_name]
+```
+
 
 
 

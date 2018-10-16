@@ -403,6 +403,8 @@ let g:ycm_enable_diagnostic_highlighting = 0
 " UltiSnips
 """""""""""""""""""""""""""""""""""""
 let g:UltiSnipsExpandTrigger="<F1>"
+let g:UltiSnipsSnippetDirectories=["UltiSnips", $HOME."/.dotfiles/"]
+
 
 " airline options
 """""""""""""""""""""""""""""""""""""
@@ -467,7 +469,7 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
+let g:syntastic_check_on_wq = 0
 let g:ale_emit_conflict_warnings = 0
 let g:syntastic_enable_signs = 1
 " let g:syntastic_javascript_checkers = ['jslint']
@@ -475,9 +477,10 @@ let g:syntastic_javascript_checkers = ["jslint"]
 
 " https://michaelthessel.com/syntastic-syntax-checker-for-vim/
 let g:syntastic_php_checkers = ["phpcs"]
-let g:syntastic_php_phpcs_args = "--standard=Drupal --extensions='php,module,inc,install,test,profile,theme,css,info,txt,md"
-
-
+let g:syntastic_php_phpcs_exec = '~/.composer/vendor/bin/phpcs'
+let g:syntastic_php_phpcs_args="--standard=Drupal --extensions=php,module,inc,install,test,profile,theme,drupal"
+" let g:syntastic_php_phpcs_args = ' --standard=Drupal'
+" let g:neomake_php_phpcs_args_standard = 'Drupal'
 
 " A function for adding new linebreak
 " http://vim.wikia.com/wiki/Add_a_newline_after_given_patterns
@@ -519,3 +522,19 @@ let g:deoplete#enable_at_startup = 1
 
 " Most Recent Used (MRU)
 map <leader>mru :MRU<cr>
+
+
+" For vdebug
+" Mapping '/remote/path' : '/local/path'
+" let g:vdebug_options['path_maps'] = {  '/var/www/web' : '/Users/huangr/git_repos/nyu-law-d8/web' }
+
+" Press jj to exit from insert mods jj to exit from insert mode
+:imap jj <Esc>
+
+
+" Less
+autocmd BufWritePost *.less !/Users/huangr/git_repos/nyu-law-d8/scripts/lessc.sh
+
+" Crontab
+" Make cronb editable in vim
+autocmd filetype crontab setlocal nobackup nowritebackup
