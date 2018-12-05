@@ -4,6 +4,8 @@ set -x PATH "$HOME/.pyenv/bin" $PATH
 
 set PATH $PATH $HOME/.composer/vendor/bin
 
+set PATH $PATH /Library/TeX/texbin
+
 source $FISH_CONF/variables.fish
 source $FISH_CONF/alias.fish
 
